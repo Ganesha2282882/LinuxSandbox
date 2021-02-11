@@ -15,5 +15,5 @@ rm bb -f
 cd $1/bin
 ln -sf busybox sh
 cd -
-chroot $1 busybox --install -s
+chroot $1 /bin/busybox --install -s
 echo "done"
