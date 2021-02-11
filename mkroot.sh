@@ -9,6 +9,8 @@ getbusybox
 mkdir -p $1/{bin,etc,sbin,usr}
 mkdir -p $1/usr/sbin
 mkdir -p $1/usr/
+mkdir -p $1/usr/share
+mkdir -p $1/usr/bin
 cp -f bb $1/bin/busybox
 chmod +x $1/bin/busybox
 rm bb -f
