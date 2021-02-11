@@ -10,6 +10,7 @@ mkdir -p $1/{bin,etc,sbin,usr}
 mkdir -p $1/usr/sbin
 mkdir -p $1/usr/
 cp -f bb $1/bin/busybox
+chmod +x $1/bin/busybox
 rm bb -f
 cd $1/bin
 ln -sf busybox sh
