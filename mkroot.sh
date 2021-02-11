@@ -5,6 +5,7 @@ getbusybox()
 echo "fetching busybox from busybox.net"
 wget https://busybox.net/downloads/binaries/1.26.2-i686/busybox -q --show-progress -O bb
 }
+getbusybox
 mkdir -p $1/{bin,etc,sbin,usr,usr/sbin}
 cp -f bb $1/bin/busybox
 rm bb -f
